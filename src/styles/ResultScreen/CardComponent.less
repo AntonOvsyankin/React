@@ -1,0 +1,154 @@
+.div-card {
+  background-color: white;
+  padding: 6px;
+  border-radius: 5px;
+  height: 136px;
+  max-width: 345px;
+  min-width: 345px;
+  margin: 15px 0 0 12px;
+
+  .div-block-left {
+    float: left;
+    width: 125px;
+    height: 100%;
+    .div-block-img {
+      width: 124px;
+      height: 124px;
+      border-radius: 3px;
+    }
+  }
+  .div-block-right {
+    float: right;
+    width: 220px;
+    height: 100%;
+
+    .img-icon {
+      float: right;
+      width: 18px;
+      height: 18px;
+    }
+
+    .div-block-description {
+      width: 180px;
+      height: 100%;
+      padding: 3px 0 0 12px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+
+      .label-block-title {
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+        font-weight: bold;
+        font-size: 95%;
+        color: #0c8ecb;
+        margin-bottom: 4px;
+        margin-top: 0;
+      }
+      .div-block-eqo {
+        display: flex;
+        flex-direction: row;
+
+        .label-block-right {
+          font-size: 90%;
+          font-weight: 500;
+          margin-right: 4px;
+          color: #cecece;
+
+        }
+        .label-block-indoors {
+          margin-right: 14.5px;
+          margin-bottom: 6px;
+        }
+      }
+      .label-block-description {
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+        font-size: 90%;
+        font-weight: 500;
+        height: 14px;
+        margin-bottom: 2px;
+      }
+      .div-block-price {
+        height: 37px;
+        width: 205px;
+      }
+      .div-price-right {
+        margin-right: -3px;
+        display: flex;
+        float: right;
+        height: 100%;
+        width: 50%;
+        justify-content: flex-end;
+
+        .div-price-nights {
+          height: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .label-block-cost {
+          text-align: center;
+          font-size: 100%;
+          color: white;
+          padding: 4px 5px 4px 5px;
+          background-color: #0c8ecb;
+          float: right;
+          border: 0 solid;
+          border-radius: 4px;
+          width: 62px;
+          margin-left: 6px;
+        }
+        .label-nights {
+          margin-left: 5px;
+          margin-right: -4px;
+          width: 73px;
+          float: right;
+          height: 14px;
+          font-size: 64%;
+          font-weight: 600;
+        }
+
+      }
+      .div-price-sales {
+        float: left;
+        height: 100%;
+        width: 50%;
+        align-items: center;
+        display: flex;
+
+        .label-sales-count{
+          color: red;
+          font-size: 70%;
+          float: left;
+        }
+      }
+    }
+  }
+
+
+  .div-block-margin {
+    margin-top: 6px;
+  }
+}
+
+.div-review-position {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 4px;
+  box-sizing: content-box;
+  z-index: 100;
+}
+.label-block-mark {
+  vertical-align: baseline;
+  font-size: 90%;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(to top, #ffc202 20%, #fff993 60%, #ff9b00 80%);
+  padding: 4px 4px 4px 4px;
+  border: 0 solid;
+  border-radius: 4px;
+}
